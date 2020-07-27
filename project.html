@@ -1,0 +1,29 @@
+<h1 class="text-center well">
+  docker pull <span class="text-danger">dockerfile/{{ projectId }}</span>
+</h1>
+
+<div class="well" style="background-color: #fff0f0;">
+  <span class="glyphicon glyphicon-bullhorn"></span>&nbsp; {March 20, 2015} We are moving most images to the official or the community repos on <a href="https://registry.hub.docker.com/">Docker Hub Registry</a>. For further details, see the <a href="http://blog.docker.com/2015/03/updates-available-to-popular-repos-update-your-images/">list of supported replacements</a> on the official Docker blog.
+</div>
+
+<div class="text-center">
+  <a href="https://github.com/dockerfile/{{ projectId }}">
+    <span class="glyphicon glyphicon-star"></span>
+    GitHub Repository
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://registry.hub.docker.com/u/dockerfile/{{ projectId }}/">
+    <span class="glyphicon glyphicon-thumbs-up"></span>
+    Docker Hub Registry
+  </a>
+</div>
+
+<hr>
+
+<div ng-bind-html="readme"></div>
+
+<hr>
+
+<h2>Dockerfile used for this automated build</h2>
+
+<pre ng-bind-html="dockerfile"></pre>
